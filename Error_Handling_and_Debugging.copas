@@ -1,0 +1,15 @@
+DEBUG = TRUE.
+
+TRY
+    PRINTLN("Starting task").
+    INTEGER result = 10 / 0.
+CATCH ERROR AS err
+    PRINTLN("ERROR: " + err.message).
+END-TRY.
+
+  CATCH ERROR AS err
+    PRINTLN("ERROR: " + err.message).
+    PRINTLN("Stack Trace: " + err.stack_trace).
+END-TRY.
+
+  
