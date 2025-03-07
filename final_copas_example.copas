@@ -1,0 +1,16 @@
+FUNCTION main() RETURNS VOID.
+BEGIN
+    DECLARE num: INTEGER = 5.
+    DECLARE name: STRING = "CoPas".
+
+    IF num < 10 THEN
+        PRINTLN("The number is less than 10").
+    ELSE
+        PRINTLN("The number is 10 or greater").
+    END-IF.
+
+    DECLARE dog: Animal.
+    dog.name = "Buddy".
+    dog.age = 4.
+    dog.speak().
+END-FUNCTION.
