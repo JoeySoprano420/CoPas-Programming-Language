@@ -1,0 +1,31 @@
+CLASS Stack[T].
+    ARRAY[10] data.
+    INTEGER top = -1.
+    
+    FUNCTION PUSH(item: T).
+    BEGIN
+        IF top < 9 THEN
+            top = top + 1.
+            data[top] = item.
+        ELSE
+            PRINTLN("Stack Overflow").
+        END-IF.
+    END-FUNCTION.
+    
+    FUNCTION POP() RETURNS T.
+    BEGIN
+        IF top >= 0 THEN
+            T item = data[top].
+            top = top - 1.
+            RETURN item.
+        ELSE
+            PRINTLN("Stack Underflow").
+            RETURN NONE.
+        END-IF.
+    END-FUNCTION.
+END-CLASS.
+
+myStack = NEW Stack[INTEGER].
+myStack.PUSH(5).
+myStack.PUSH(10).
+PRINTLN(myStack.POP()).
