@@ -1,0 +1,7 @@
+DECLARE result: INTEGER = 2.
+
+SWITCH result USING hashMap.
+    CASE 1: PRINTLN("Result is one").
+    CASE 2: PRINTLN("Result is two").
+    CASE 3: PRINTLN("Result is three").
+END-SWITCH.
