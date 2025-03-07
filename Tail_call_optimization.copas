@@ -5,3 +5,11 @@ BEGIN
     END-IF.
     RETURN n * factorial(n - 1).
 END-FUNCTION.
+
+FUNCTION factorial(n: INTEGER, acc: INTEGER) RETURNS INTEGER.
+BEGIN
+    IF n == 0 THEN
+        RETURN acc.
+    END-IF.
+    RETURN factorial(n - 1, acc * n).
+END-FUNCTION.
