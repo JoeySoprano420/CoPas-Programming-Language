@@ -1,0 +1,14 @@
+IF x > 5 THEN
+    PRINTLN("x is greater than 5").
+ELSE
+    PRINTLN("x is 5 or less").
+END-IF.
+
+WHILE x > 0 DO
+    PRINTLN(x).
+    x = x - 1.
+END-WHILE.
+
+FOR i = 0 TO 10 STEP 2 DO
+    PRINTLN(i).
+END-FOR.
