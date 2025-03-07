@@ -1,0 +1,29 @@
+BEGIN.
+    PRINTLN("Enter a number:").
+    INTEGER num.
+    READ num.
+
+    // Error handling example
+    TRY
+        IF num MOD 2 == 0 THEN
+            PRINTLN("Even number.").
+        ELSE
+            PRINTLN("Odd number.").
+        END-IF.
+    CATCH ERROR AS err
+        PRINTLN("Error: " + err.message).
+    END-TRY.
+
+    // Pattern Matching
+    STRING result = MATCH num.
+        CASE 1: "One".
+        CASE 2: "Two".
+        CASE _ : "Other".
+    END-MATCH.
+    
+    PRINTLN("Matched: " + result).
+
+    // Function example with recursion and tail call optimization
+    INTEGER factorial = factorial(5, 1).
+    PRINTLN("Factorial: " + factorial).
+END.
