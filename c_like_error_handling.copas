@@ -1,0 +1,5 @@
+TRY
+    DECLARE num: INTEGER = 10 / 0.  // This could trigger an exception
+CATCH exception AS DIVIDE_BY_ZERO.
+    PRINTLN("Error: Cannot divide by zero").
+END-TRY.
