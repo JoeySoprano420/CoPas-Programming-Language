@@ -1,0 +1,16 @@
+CLASS Stack<T>.
+    ARRAY[100] items.
+    INTEGER top = 0.
+
+    FUNCTION Push(item: T).
+    BEGIN
+        items[top] = item.
+        top = top + 1.
+    END-FUNCTION.
+
+    FUNCTION Pop() RETURNS T.
+    BEGIN
+        top = top - 1.
+        RETURN items[top].
+    END-FUNCTION.
+END-CLASS.
