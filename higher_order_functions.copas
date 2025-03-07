@@ -1,0 +1,11 @@
+DECLARE applyFunction: FUNCTION(func: FUNCTION(a: INTEGER) RETURNS INTEGER, value: INTEGER) RETURNS INTEGER.
+BEGIN
+    RETURN func(value).
+END-FUNCTION.
+
+DECLARE increment: FUNCTION(a: INTEGER) RETURNS INTEGER.
+BEGIN
+    RETURN a + 1.
+END-FUNCTION.
+
+DECLARE result: INTEGER = applyFunction(increment, 5).  // result = 6
