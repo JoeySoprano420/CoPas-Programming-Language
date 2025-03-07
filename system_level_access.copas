@@ -1,0 +1,2 @@
+IMPORT systemAPI FROM "syscalls.dll".
+DECLARE result: INTEGER = systemAPI.getSystemInfo().
