@@ -1,0 +1,8 @@
+STRUCT Person.
+    STRING name.
+    INTEGER age.
+END-STRUCT.
+
+DECLARE person1: Person.
+person1.name = "Alice".
+person1.age = 30.
