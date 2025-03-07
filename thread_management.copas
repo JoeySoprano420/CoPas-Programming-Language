@@ -1,0 +1,12 @@
+DECLARE thread1: THREAD.
+thread1 = THREAD( FUNCTION() BEGIN
+    PRINTLN("Thread 1 running").
+END-FUNCTION ).
+
+DECLARE thread2: THREAD.
+thread2 = THREAD( FUNCTION() BEGIN
+    PRINTLN("Thread 2 running").
+END-FUNCTION ).
+
+thread1.start().
+thread2.start().
