@@ -1,0 +1,3 @@
+DECLARE ptr: POINTER.
+DECLARE size: INTEGER = 10.
+ptr = ALLOCATE(size).
