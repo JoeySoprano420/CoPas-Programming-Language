@@ -1,0 +1,4 @@
+DECLARE asyncFunction: FUNCTION() RETURNS VOID.
+BEGIN
+    AWAIT someAsyncOperation().
+END-FUNCTION.
