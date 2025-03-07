@@ -1,0 +1,3 @@
+IMPORT winapi FROM "windows_api.dll".
+
+DECLARE hwnd: INTEGER = winapi.createWindow("MyWindow", 800, 600).
