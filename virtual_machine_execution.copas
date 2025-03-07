@@ -1,0 +1,9 @@
+DECLARE vm: VIRTUAL_MACHINE.
+
+FUNCTION executeOnVM(code: STRING) RETURNS VOID.
+BEGIN
+    vm.execute(code).
+END-FUNCTION.
+
+DECLARE codeToRun: STRING = "PRINT 'Hello from VM'".
+executeOnVM(codeToRun).
