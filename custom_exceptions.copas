@@ -1,0 +1,14 @@
+DECLARE EXCEPTION InvalidInput.
+
+FUNCTION checkInput(input: STRING) RETURNS VOID.
+BEGIN
+    IF input IS "bad" THEN
+        THROW InvalidInput.
+    END-IF.
+END-FUNCTION.
+
+TRY
+    checkInput("bad").
+CATCH InvalidInput.
+    PRINTLN("Custom exception caught: Invalid input").
+END-TRY.
