@@ -1,0 +1,8 @@
+DECLARE smartPtr: SMART_POINTER[Object].
+
+FUNCTION createSmartPtr() RETURNS SMART_POINTER[Object].
+BEGIN
+    RETURN NEW SMART_POINTER[Object](NEW Object).
+END-FUNCTION.
+
+DECLARE myObject: SMART_POINTER[Object] = createSmartPtr().
