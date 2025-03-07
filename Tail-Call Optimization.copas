@@ -1,0 +1,8 @@
+FUNCTION factorial(n: INTEGER, acc: INTEGER) RETURNS INTEGER.
+BEGIN
+    IF n <= 1 THEN
+        RETURN acc.
+    ELSE
+        RETURN factorial(n - 1, n * acc).
+    END-IF.
+END-FUNCTION.
