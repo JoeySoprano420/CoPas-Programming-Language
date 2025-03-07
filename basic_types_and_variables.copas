@@ -1,0 +1,4 @@
+INTEGER x = 10.
+STRING name = "Joey".
+BOOLEAN isActive = TRUE.
+FLOAT temperature = 36.5.
