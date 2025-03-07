@@ -1,0 +1,6 @@
+DECLARE add: FUNCTION(a: INTEGER, b: INTEGER) RETURNS INTEGER.
+BEGIN
+    RETURN a + b.
+END-FUNCTION.
+
+DECLARE result: INTEGER = add(5, 3).  // Function inlined here
