@@ -1,0 +1,3 @@
+FOR i = 1 TO 4 DO
+    PRINTLN(i).
+END-FOR.
