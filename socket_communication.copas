@@ -1,0 +1,10 @@
+DECLARE socket: SOCKET.
+DECLARE serverAddress: STRING = "127.0.0.1".
+
+socket.connect(serverAddress, 8080).
+
+DECLARE data: STRING = "Hello, Server".
+socket.send(data).
+
+DECLARE response: STRING = socket.receive().
+PRINTLN("Received from server: " + response).
