@@ -1,0 +1,3 @@
+MACRO Square(x) BEGIN
+    RETURN x * x.
+END-MACRO.
