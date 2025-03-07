@@ -1,0 +1,13 @@
+DECLARE mutex: MUTEX.
+
+THREAD( FUNCTION() BEGIN
+    mutex.lock().
+    PRINTLN("Critical section entered by thread 1").
+    mutex.unlock().
+END-FUNCTION ).
+
+THREAD( FUNCTION() BEGIN
+    mutex.lock().
+    PRINTLN("Critical section entered by thread 2").
+    mutex.unlock().
+END-FUNCTION ).
