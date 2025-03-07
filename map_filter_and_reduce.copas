@@ -1,0 +1,5 @@
+DECLARE numbers: LIST[INTEGER] = [1, 2, 3, 4, 5].
+
+DECLARE doubled: LIST[INTEGER] = map((LAMBDA(x) x * 2), numbers).
+DECLARE evenNumbers: LIST[INTEGER] = filter((LAMBDA(x) x MOD 2 = 0), numbers).
+DECLARE sum: INTEGER = reduce((LAMBDA(acc, x) acc + x), numbers, 0).
