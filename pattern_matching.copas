@@ -1,0 +1,8 @@
+SWITCH x.
+    CASE 1:
+        PRINTLN("One").
+    CASE 2:
+        PRINTLN("Two").
+    DEFAULT:
+        PRINTLN("Other").
+END-SWITCH.
