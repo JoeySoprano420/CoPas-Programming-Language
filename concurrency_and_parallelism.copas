@@ -1,0 +1,12 @@
+TASK asyncFunc() RETURNS INTEGER.
+BEGIN
+    PRINTLN("Starting async function...").
+    WAIT 1000ms.
+    RETURN 42.
+END-TASK.
+
+BEGIN.
+    THREAD t = NEW THREAD(asyncFunc).
+    INTEGER result = AWAIT t.
+    PRINTLN("Async result: " + result).
+END.
