@@ -1,0 +1,2 @@
+DECLARE result: INTEGER.
+DECLARE num: INTEGER = 10 / 0.  // C-like arithmetic
