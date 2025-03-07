@@ -1,0 +1,2 @@
+ALLOCATE myArray[100].
+FREE myArray.
