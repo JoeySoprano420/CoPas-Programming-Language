@@ -1,0 +1,8 @@
+DECLARE increment: FUNCTION(a: INTEGER) RETURNS INTEGER.
+BEGIN
+    RETURN a + 1.
+END-FUNCTION.
+
+DECLARE list: LIST[INTEGER] = [1, 2, 3, 4].
+
+DECLARE newList: LIST[INTEGER] = map(increment, list).  // Pure transformation
