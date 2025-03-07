@@ -1,0 +1,2 @@
+DECLARE num = 10.   // CoPas infers that num is INTEGER
+DECLARE message = "Hello".  // CoPas infers that message is STRING
