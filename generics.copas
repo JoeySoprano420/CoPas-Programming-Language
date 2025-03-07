@@ -1,0 +1,9 @@
+FUNCTION printList[T](list: LIST[T]) RETURNS VOID.
+BEGIN
+    FOR item IN list DO
+        PRINTLN(item).
+    END-FOR.
+END-FUNCTION.
+
+DECLARE intList: LIST[INTEGER] = [1, 2, 3, 4].
+printList(intList).
