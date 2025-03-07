@@ -1,0 +1,6 @@
+DECLARE addOne: FUNCTION(x: INTEGER) RETURNS INTEGER.
+BEGIN
+    RETURN x + 1.
+END-FUNCTION.
+
+DECLARE incremented: INTEGER = (LAMBDA(x) x + 1)(5).  // Using lambda expression
