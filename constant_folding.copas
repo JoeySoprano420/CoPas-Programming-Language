@@ -1,0 +1,1 @@
+DECLARE x = 3 * 4.   // Computed as 12 at compile time
