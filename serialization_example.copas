@@ -1,0 +1,6 @@
+DECLARE myObject: Person.
+myObject.name = "Alice".
+myObject.age = 30.
+
+DECLARE serializedData: STRING = serializeToJson(myObject).
+PRINTLN(serializedData).
