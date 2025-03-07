@@ -1,0 +1,28 @@
+CLASS LinkedList.
+    INTEGER value.
+    REF LinkedList next.
+    
+    FUNCTION INIT(v: INTEGER).
+    BEGIN
+        SELF.value = v.
+        SELF.next = NONE.
+    END-FUNCTION.
+    
+    FUNCTION ADD(v: INTEGER).
+    BEGIN
+        REF LinkedList newNode = NEW LinkedList(v).
+        IF SELF.next == NONE THEN
+            SELF.next = newNode.
+        ELSE
+            REF LinkedList temp = SELF.
+            WHILE temp.next != NONE DO
+                temp = temp.next.
+            END-WHILE.
+            temp.next = newNode.
+        END-IF.
+    END-FUNCTION.
+END-CLASS.
+
+myList = NEW LinkedList(5).
+myList.ADD(10).
+myList.ADD(15).
