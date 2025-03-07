@@ -1,0 +1,9 @@
+CHANNEL ch.
+THREAD producer = NEW THREAD(FUNCTION ProduceData(ch)).
+THREAD consumer = NEW THREAD(FUNCTION ConsumeData(ch)).
+
+START producer.
+START consumer.
+
+JOIN producer.
+JOIN consumer.
