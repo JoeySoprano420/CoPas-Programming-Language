@@ -1,0 +1,6 @@
+DECLARE window: WINDOW = createWindow("MyApp", 400, 300).
+DECLARE button: BUTTON = createButton(window, "Click Me").
+button.onClick(FUNCTION() BEGIN
+    PRINTLN("Button clicked!").
+END-FUNCTION).
+window.show().
