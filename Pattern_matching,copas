@@ -1,0 +1,5 @@
+result = MATCH value.
+    CASE 1: "One".
+    CASE 2: "Two".
+    CASE _ : "Unknown".
+END-MATCH.
