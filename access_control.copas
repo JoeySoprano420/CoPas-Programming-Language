@@ -1,0 +1,16 @@
+CLASS Person.
+    STRING name.
+    INTEGER age.
+
+    PRIVATE STRING SSN.
+
+    FUNCTION setSSN(ssn: STRING) RETURNS VOID.
+    BEGIN
+        SSN = ssn.
+    END-FUNCTION.
+
+    FUNCTION getSSN() RETURNS STRING.
+    BEGIN
+        RETURN SSN.
+    END-FUNCTION.
+END-CLASS.
