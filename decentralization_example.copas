@@ -1,0 +1,2 @@
+DECLARE jsonString: STRING = '{"name": "Bob", "age": 25}'.
+DECLARE deserializedObject: Person = deserializeFromJson(jsonString).
