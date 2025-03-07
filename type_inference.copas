@@ -1,0 +1,3 @@
+DECLARE x = 5.   // Type inferred as INTEGER
+DECLARE name = "Hello".  // Type inferred as STRING
+DECLARE isActive = TRUE.  // Type inferred as BOOLEAN
