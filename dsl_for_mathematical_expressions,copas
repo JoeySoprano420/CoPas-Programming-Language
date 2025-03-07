@@ -1,0 +1,4 @@
+DECLARE expr: STRING = "3 * (2 + 5)".
+
+DECLARE result: INTEGER = evaluateExpression(expr).
+PRINTLN("The result is " + result).
