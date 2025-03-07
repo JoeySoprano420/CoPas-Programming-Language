@@ -1,0 +1,4 @@
+DECLARE obj: Animal.
+DECLARE typeInfo: TYPE = getTypeInfo(obj).
+
+PRINTLN(typeInfo.name).  // Outputs: Animal
