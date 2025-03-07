@@ -1,0 +1,26 @@
+BEGIN
+    PRINTLN("Welcome to CoPas Enhanced Language!").
+    
+    // Enhanced Function Call with Debugging
+    FUNCTION Add(a: INTEGER, b: INTEGER) RETURNS INTEGER.
+    BEGIN
+        ASSERT a >= 0 AND b >= 0.
+        RETURN a + b.
+    END-FUNCTION.
+    
+    INTEGER result = Add(5, 10).
+    PRINTLN("Result: " + result).
+    
+    // Async function call
+    STRING asyncResult = await fetchData().
+    PRINTLN("Fetched: " + asyncResult).
+    
+    // Pattern Matching example
+    SWITCH result.
+        CASE 15:
+            PRINTLN("The result is fifteen").
+        DEFAULT:
+            PRINTLN("The result is not fifteen").
+    END-SWITCH.
+    
+END.
